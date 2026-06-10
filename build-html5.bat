@@ -16,5 +16,6 @@ SET "SortableDateTime=%YYYY%-%MM%-%DD%@%HH%-%MIN%-%SEC%"
 lime build html5
 cd export/release/html5/bin
 git add .
-git commit -m "New HTML5 build (%SortableDateTime%)"
+git commit -m "%SortableDateTime%"
 git push -u origin main
+cd ../../../../
