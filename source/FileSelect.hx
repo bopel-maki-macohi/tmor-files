@@ -1,3 +1,4 @@
+import haxe.Json;
 import lime.utils.Assets;
 import flixel.FlxState;
 
@@ -5,7 +6,7 @@ using haxe.io.Path;
 
 class FileSelect extends FlxState
 {
-	var files = [];
+	var files:Array<Entry> = [];
 
 	override function create()
 	{
@@ -23,6 +24,18 @@ class FileSelect extends FlxState
 				continue;
 
 			trace(file);
+
+			try
+			{
+				var entry:Entry = Json.parse(Assets.getText(file));
+
+				if (entry != null)
+					files.push(entry);
+			}
+			catch (e)
+			{
+				trace(e);
+			}
 		}
 	}
 }
