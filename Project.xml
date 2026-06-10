@@ -30,7 +30,7 @@
 
 	<!-- _________________________________ Custom _______________________________ -->
 
-	<!--Place custom nodes like icons here-->
+	<define name="lime_disable_assets_version" />
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
 
