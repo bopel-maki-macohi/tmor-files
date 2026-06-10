@@ -2,5 +2,5 @@
 	"search.exclude": {
 		"export/**/*.*": true
 	},
-	"lime.defaultTargetConfiguration": "Windows / Debug"
+	"lime.defaultTargetConfiguration": "HTML5 / Debug"
 }
